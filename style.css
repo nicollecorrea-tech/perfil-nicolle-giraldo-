@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Encabezado */
+header {
+    background-color: #d98ca8;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 85%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+/* Perfil personal */
+.perfil {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Recuadro de la foto */
+.foto-contenedor {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    border: 4px solid #d98ca8;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffe4ed;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.presentacion h2 {
+    color: #c76d91;
+    font-size: 27px;
+}
+
+.presentacion h3 {
+    color: #777;
+    margin-bottom: 12px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta h2 {
+    color: #c76d91;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* Intereses */
+.intereses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.interes {
+    background-color: #fff0f5;
+    border-left: 4px solid #d98ca8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.interes h3 {
+    color: #c76d91;
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #d98ca8;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+
+    .contenedor {
+        width: 92%;
+    }
+
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intereses {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
